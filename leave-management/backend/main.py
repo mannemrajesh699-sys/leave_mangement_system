@@ -1,8 +1,6 @@
 from fastapi import FastAPI
-from .database import engine, Base
-from .routes import employees, leaves
-
-Base.metadata.create_all(bind=engine)
+from database import engine, Base
+from routes import employees, leaves
 
 app = FastAPI(title="Leave Management System")
 
@@ -15,6 +13,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.on_event("startup")
+def startup():
+    Base.metadata.create_all(bind=engine)
 
 app.include_router(employees.router)
 app.include_router(leaves.router)
