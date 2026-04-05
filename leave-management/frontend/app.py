@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API = "https://your-render-url.onrender.com"
+API = "http://127.0.0.1:8000"
 
 st.title("Leave Management System")
 role = st.sidebar.selectbox("Login as", ["Employee", "Admin"])
