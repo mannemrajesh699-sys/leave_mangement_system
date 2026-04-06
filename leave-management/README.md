@@ -21,42 +21,16 @@ A full-stack Leave Management System that allows employees to apply for leave an
 
 * FastAPI
 * PostgreSQL
-* SQLAlchemy
 
 ### Frontend
 
-* HTML / CSS / JavaScript (or your UI framework)
+* HTML / CSS 
 
 ### Tools
 
-* Git & GitHub
+* GitHub
 * pgAdmin (for database management)
 
----
-
-## 📁 Project Structure
-
-```
-leave_management_system/
-│
-├── backend/
-│   ├── main.py
-│   ├── database.py
-│   ├── models.py
-│   ├── schemas.py
-│   ├── crud.py
-│   └── routers/
-│       └── employees.py
-│
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-└── README.md
-```
-
----
 
 ## ⚙️ Installation & Setup
 
@@ -64,7 +38,8 @@ leave_management_system/
 
 ```bash
 git clone https://github.com/mannemrajesh699-sys/leave_mangement_system.git
-cd leave_mangement_system
+cd leave_mangement
+cd leave-management
 ```
 
 ### 2. Create Virtual Environment
@@ -101,7 +76,7 @@ uvicorn main:app --reload
 
 ### 6. Run Frontend
 
-Open `index.html` in browser
+Open `app.py` in browser
 OR use Live Server (VS Code)
 
 ---
