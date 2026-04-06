@@ -9,7 +9,7 @@ A full-stack Leave Management System that allows employees to apply for leave an
 * Employee leave application
 * Manager approval / rejection system
 * Leave status tracking
-* REST API integration
+* FAST API integration
 * Simple and clean UI
 * Database-driven system
 
@@ -24,7 +24,7 @@ A full-stack Leave Management System that allows employees to apply for leave an
 
 ### Frontend
 
-* HTML / CSS 
+* Python
 
 ### Tools
 
